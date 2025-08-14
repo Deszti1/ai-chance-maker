@@ -72,28 +72,28 @@ All colors MUST be HSL.
 
   .dark {
     --background: 220 90% 8%;
-    --foreground: 210 40% 98%;
+    --foreground: 0 0% 98%;
 
     --card: 220 90% 12%;
-    --card-foreground: 210 40% 98%;
+    --card-foreground: 0 0% 98%;
 
     --popover: 220 90% 12%;
-    --popover-foreground: 210 40% 98%;
+    --popover-foreground: 0 0% 98%;
 
     --primary: 214 100% 60%;
     --primary-foreground: 220 90% 8%;
 
     --secondary: 220 90% 16%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary-foreground: 0 0% 98%;
 
     --muted: 220 90% 16%;
-    --muted-foreground: 210 40% 95%;
+    --muted-foreground: 0 0% 95%;
 
     --accent: 214 100% 60%;
     --accent-foreground: 220 90% 8%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
     --border: 220 90% 16%;
     --input: 220 90% 16%;
