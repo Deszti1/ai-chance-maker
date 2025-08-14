@@ -53,6 +53,10 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				electric: 'hsl(var(--electric-blue))',
+				'deep-blue': 'hsl(var(--deep-blue))',
+				'dark-blue': 'hsl(var(--dark-blue))',
+				'navy-blue': 'hsl(var(--navy-blue))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -67,11 +71,13 @@ export default {
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-hero': 'var(--gradient-hero)',
-				'gradient-card': 'var(--gradient-card)'
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-electric': 'var(--gradient-electric)'
 			},
 			boxShadow: {
 				'soft': 'var(--shadow-soft)',
-				'glow': 'var(--shadow-glow)'
+				'glow': 'var(--shadow-glow)',
+				'electric': 'var(--shadow-electric)'
 			},
 			transitionTimingFunction: {
 				'smooth': 'var(--transition-smooth)'
