@@ -62,7 +62,9 @@ export function ApiExamples() {
   );
 
   // Mutations
-  const applyMutation = useMutation(opportunityService.applyToOpportunity);
+  const applyMutation = useMutation((params: { opportunityId: string; applicationData: any }) => 
+    opportunityService.applyToOpportunity(params.opportunityId, params.applicationData)
+  );
   const saveMutation = useMutation(opportunityService.saveOpportunity);
   const markReadMutation = useMutation(adminService.markNotificationAsRead);
 
@@ -98,10 +100,13 @@ export function ApiExamples() {
     }
 
     try {
-      await applyMutation.mutate([opportunityId, {
-        coverLetter: "I am very interested in this opportunity...",
-        additionalInfo: "Additional information about my qualifications"
-      }]);
+      await applyMutation.mutate({
+        opportunityId,
+        applicationData: {
+          coverLetter: "I am very interested in this opportunity...",
+          additionalInfo: "Additional information about my qualifications"
+        }
+      });
       
       toast({
         title: "Application Submitted",
